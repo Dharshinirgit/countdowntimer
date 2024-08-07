@@ -1,0 +1,281 @@
+/* css styling for countdown timer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* applying font properties and image as a background to this webpage */
+body {
+  
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('image.jpg');
+    font-family: 'Poppins', sans-serif;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* title */
+h1 {
+    color: #F5F5F5;
+    font-size: 40px;
+}
+/* date and time inputs styling */
+table {
+    margin: auto;
+}
+
+th {
+    color: #FFFFFF;
+}
+
+input {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* styling buttons */
+button {
+    min-width: 120px;
+    margin: 40px 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    font-weight: 600;
+}
+/* center aligning the contents of the page */
+.main
+{
+    /*margin-top:0px;
+    text-align: center;
+    background-color: aqua;
+    width:80%;
+    height:700;
+    margin:auto;*/
+    margin-top:50px;
+    width:80%;
+    height:700px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    right:50%;
+    transform:translate(-50%,-50%);
+    
+}   
+/* styling timeleft unit */ 
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:30px;
+    gap:15px;
+}
+/* adding styles to sub headings */
+.heading {
+    color: #F5F5F5;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.time {
+
+    color:white;
+    font-size: 100px;
+    width: 150px;
+    margin: 0 10px;
+}
+/* using media queries for making this design responsive */
+@media (max-width:768px)
+{
+
+    h1
+    {
+       font-size:35px;
+    }
+    table
+    {
+        margin:auto;
+    }
+    input
+    {
+        font-size:17px;
+        padding:4px;
+        border-radius:3px;
+    }
+    /*.main
+    {
+        margin-top:auto;
+        margin-bottom:auto;
+        /*text-align: center;
+        margin: auto;
+    }*/
+    button
+    {
+        min-width:100px;
+        margin:18px 8px;
+        font-size: 18px;
+        border-radius:4px;
+    }
+    .countdown
+    {
+        margin-top:28px;
+        gap:11px;
+    }
+    .heading
+    {
+      font-size:14px;
+
+    }
+    .time
+    {
+        font-size:80px;
+        width:130px;
+        margin:0 12px;
+
+    }
+}
+
+@media (max-width:600px)
+{
+
+    h1
+    {
+       font-size:30px;
+    }
+    table
+    {
+        margin:auto;
+    }
+    input
+    {
+        font-size:14px;
+        padding:3px;
+        border-radius:2px;
+    }
+    /*.main
+    {
+       margin-top:150px;
+       text-align: center;
+       margin: auto;
+    }*/
+    button
+    {
+        min-width:80px;
+        margin:16px 6px;
+        font-size: 16px;
+        border-radius:3px;
+    }
+    .countdown
+    {
+        margin-top:24px;
+        gap:7px;
+    }
+    .heading
+    {
+      font-size:10px;
+
+    }
+    .time
+    {
+        font-size:60px;
+        width:110px;
+        margin:0 12px;
+
+    }
+}
+
+@media (max-width:475px)
+{
+
+    h1
+    {
+       font-size:25px;
+    }
+    table
+    {
+        margin:auto;
+    }
+    input
+    {
+        font-size:11px;
+        padding:2px;
+        border-radius:2px;
+    }
+    /*.main
+    {
+       margin-top:200px;
+       text-align:center ;
+       margin: auto;
+    }*/
+    button
+    {
+        min-width:60px;
+        margin:14px 4px;
+        font-size: 14px;
+        border-radius:2px;
+    }
+    .countdown
+    {
+        margin-top:22px;
+        gap:5px;
+    }
+    .heading
+    {
+      font-size:7px;
+
+    }
+    .time
+    {
+        font-size:40px;
+        width:90px;
+        margin:0 8px;
+
+    }
+}
+@media (max-width:275px)
+{
+
+    h1
+    {
+       font-size:20px;
+    }
+    table
+    {
+        margin:auto;
+    }
+    input
+    {
+        font-size:8px;
+        padding:2px;
+        border-radius:2px;
+    }
+    /*.main
+    {
+        margin-top:250px;
+        text-align: center;
+       
+    }*/
+    button
+    {
+        min-width:40px;
+        margin:12px 2px;
+        font-size: 12px;
+        border-radius:2px;
+    }
+    .countdown
+    {
+        margin-top:18px;
+        gap:3px;
+    }
+    .heading
+    {
+      font-size:5px;
+
+    }
+    .time
+    {
+        font-size:35px;
+        width:80px;
+        margin:0 6px;
+
+    }
+}

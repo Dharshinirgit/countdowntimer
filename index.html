@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--HTML structure for countdown timer-->
+<html>
+    <head>
+        <title>Countdown Timer</title>
+        <!--external files (css and js file) linkage-->
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div class="main">
+        <h1>Countdown Timer</h1>
+
+        <!--date and time inputs from user-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Enter Date</th>
+                    <th>Enter Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="date" id="date" ></td>
+                    <td><input type="time" id="time" ></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--calculate, Reset and stop buttons-->
+        <!--Starts calculation-->
+         <button id="calculate">Calculate</button> 
+         <!--stops the timer-->
+         <button id="stop">Stop</button> 
+         <!--Resets all the values to 0 -->
+         <button id="reset">Reset</button> 
+         
+         <!--timeledft (days,hours,minutes,seconds) display unit-->
+        <div class="countdown">
+            <div>
+                <p class="heading">DAY</p>
+                <div class="time" id="countdown-days">0</div>
+            </div>
+            <div>
+                <p class="heading">HOURS</p>
+                <div class="time" id="countdown-hours">0</div>
+            </div>
+            <div>
+                <p class="heading">MINUTES</p>
+                <div class="time" id="countdown-minutes">0</div>
+            </div>
+            <div>
+                <p class="heading">SECONDS</p>
+                <div class="time" id="countdown-seconds">0</div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
